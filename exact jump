@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exact Jump</title>
+</head>
+<body>
+
+<nav id="mainNav">
+<a href="#inicio" class="js-scroll-trigger">Inicio</a>
+</nav>
+<body>
+</body>
+
+<section id="inicio">
+<img src="https://avatars3.githubusercontent.com/u/48217770?s=460&v=4" width="100%">
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+</section>
+
+
+<script src="https://doctoraveronicagarcia.com/script/bootstrap.bundle.js"></script>
+<script src="https://doctoraveronicagarcia.com/script/jquery.easing.min.js"></script>
+<script src="https://doctoraveronicagarcia.com/script/magnific-popup.in.js"></script>
+<script src="https://doctoraveronicagarcia.com/script/freelancer.min.js"></script>
+
+</body>
+</html>
