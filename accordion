@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Tabs</title>
+    <style>
+    body{margin: 0}
+  ul.tabs {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: 3em;
+    /* border-bottom: 1px solid #333; */
+    width: 100%;
+  }
+  
+  ul.tabs li {
+    float: left;
+    margin: 0;
+    cursor: pointer;
+    padding: 1em 1em;
+    height: auto;
+    line-height:10px;
+    /* borderclip-path: polygon(100% 100%,100% 0,-400% 0); */
+    border-top: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    background-color: #fdfdfd;
+    color: #49a0e1;
+    overflow: hidden;
+    position: relative;
+    /* transition: all .5s */
+  }
+  
+  .tab_last { border-right: 1px solid #499fe14f}
+  
+  ul.tabs li:hover {
+    background-color: #71bae4fa;
+    color: #ececec;
+  }
+  
+  ul.tabs li.active {
+    background-color:#49a0e1;
+    color:#fff;
+    /* border-bottom: 1px solid #fff; */
+    display: block;
+  }
+  
+  .tab_container {
+    /* border: 1px solid rgba(51, 51, 51, 0.753); */
+    border-top: none;
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #fff;
+    overflow: auto;
+  }
+  
+  .tab_content {
+    padding: 2em 2em;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    justify-items: center
+    /* display: none */
+  }
+  .titles-footer{font-size:24px}
+  .tab_drawer_heading { display: none; }
+  
+  @media screen and (max-width: 480px) {
+    .tabs {
+      display: none;
+    }
+    .tab_drawer_heading {
+      background-color: #fff;
+      /* color: #fff; */
+      border-top: 1px solid #dddddd;
+      margin: 0;
+      padding:1em;
+      display: block;
+      cursor: pointer;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .d_active {
+      /* display: grid; */
+      background-color: #49a0e1;
+      color: #fff;
+    }
+  }
+    </style>
+</head>
+<body>
+        <section id="servicios">
+                <br><br>
+            <h1 class="x-small center">Servicios</h1>
+        <br>
+        
+            <ul class="tabs">
+                <li class="active" rel="tab1">Odontología general 	
+                        <br>
+                    <center><i class="fas fa-sort-down"></i></center></li>
+                <li rel="tab2">Periodoncia <br> <center><i class="fas fa-sort-down"></i></center></li>
+                <li rel="tab3">Endodoncia <br> <center><i class="fas fa-sort-down"></i></center></li>
+                <li rel="tab4">Rehabilitación oral y estetica <br> <center><i class="fas fa-sort-down"></i></center></li>
+                <li rel="tab5">Implantología <br> <center><i class="fas fa-sort-down"></i></center></li>
+                <li rel="tab6" style="border-top-right-radius: 2em;border-bottom-right-radius: 2em;" class="tab_last">Prevención <br> <center><i class="fas fa-sort-down"></i></center></li>
+                <!-- <li rel="tab4">Tab 4</li> -->
+                
+            </ul>
+        
+              <div class="tab_container">
+            
+                <h3 class="d_active tab_drawer_heading" rel="tab1">Odontología general <span class="float-right"><i class="fas fa-sort-down"></i></span></h3>
+                <div id="tab1" class="tab_content" style="display: grid;">
+        
+        <article class="center">
+        <img src="img/odontologia general.svg" class="center" alt="" width="100px">	
+        <h1 class="" style="font-size: 30px">Odontología general :</h1>
+        <br class="xl-hidde visible">
+        <br class="xl-hidde xs-visible">
+        </article>
+        
+                <!-- <span>|</span> -->
+        <article class="line-left-decoration">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore vero temporibus inventore dicta blanditiis laudantium ab! Sit nesciunt dicta maiores veritatis quisquam, nemo quidem, aperiam ab delectus, perspiciatis asperiores!
+                Voluptatibus officia provident asperiores nostrum aut ab rerum nemo blanditiis, libero id nesciunt odio veritatis corrupti? Nisi ad vitae quidem nam adipisci earum, consectetur odit non commodi tenetur! Laudantium, consequuntur!</p>
+            <br><br>
+            <!-- <a href="http://" target="_blank" rel="noopener noreferrer" class="cite"></a>	 -->
+            <a href="" class="shop border-d p-1">Agenda tu cita en instantes &nbsp; <i class="fas fa-calendar-day"></i></a>
+        </article>
+        
+                </div>
+                <!-- #tab1 -->
+                
+                <h3 class="tab_drawer_heading" rel="tab2">Periodoncia <span class="float-right"><i class="fas fa-sort-down"></i></span></h3>
+                <div id="tab2" class="tab_content" style="display: none;">
+                    
+                        <article class="center">
+                                <img src="img/periodoncia.svg" class="center" alt="" width="150px">	
+                                <h1 class="" style="font-size: 30px">Periodoncia :</h1>
+                            
+                                <br class="xl-hidde visible">
+                                <br class="xl-hidde xs-visible">	</article>
+                                
+                                        <!-- <span>|</span> -->
+                                <article class="line-left-decoration">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore vero temporibus inventore dicta blanditiis laudantium ab! Sit nesciunt dicta maiores veritatis quisquam, nemo quidem, aperiam ab delectus, perspiciatis asperiores!
+                                        Voluptatibus officia provident asperiores nostrum aut ab rerum nemo blanditiis, libero id nesciunt odio veritatis corrupti? Nisi ad vitae quidem nam adipisci earum, consectetur odit non commodi tenetur! Laudantium, consequuntur!</p>
+                                    <br><br>
+                                    <!-- <a href="http://" target="_blank" rel="noopener noreferrer" class="cite"></a>	 -->
+                                    <a href="" class="shop border-d p-1">Agenda tu cita en instantes &nbsp; <i class="fas fa-calendar-day"></i></a>
+                                </article>
+                
+                </div>
+                <!-- #tab2 -->
+            
+                <h3 class="tab_drawer_heading" rel="tab3">Endodoncia <span class="float-right"><i class="fas fa-sort-down"></i></span></h3>
+                <div id="tab3" class="tab_content" style="display: none;">
+            
+                        <article class="center">
+                                <img src="img/endodoncia_servivios_menu.svg" class="center" alt="" width="150px">	
+                                <h1 class="" style="font-size: 30px">Endodoncia :</h1>
+                                <br class="xl-hidde visible">
+        <br class="xl-hidde xs-visible">
+                                </article>
+                                
+                                        <!-- <span>|</span> -->
+                                <article class="line-left-decoration">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore vero temporibus inventore dicta blanditiis laudantium ab! Sit nesciunt dicta maiores veritatis quisquam, nemo quidem, aperiam ab delectus, perspiciatis asperiores!
+                                        Voluptatibus officia provident asperiores nostrum aut ab rerum nemo blanditiis, libero id nesciunt odio veritatis corrupti? Nisi ad vitae quidem nam adipisci earum, consectetur odit non commodi tenetur! Laudantium, consequuntur!</p>
+                                    <br><br>
+                                    <!-- <a href="http://" target="_blank" rel="noopener noreferrer" class="cite"></a>	 -->
+                                    <a href="" class="shop border-d p-1">Agenda tu cita en instantes &nbsp; <i class="fas fa-calendar-day"></i></a>
+                                </article>
+        
+                </div>
+                <!-- #tab3 -->
+            
+                <h3 class="tab_drawer_heading" rel="tab4">Rehabilitación oral y estetica <span class="float-right"><i class="fas fa-sort-down"></i></span></h3>
+                <div id="tab4" class="tab_content" style="display: none;">
+                
+                        <article class="center">
+                                <img src="img/rehabilitacion_oral_menu.svg" class="center" alt="" width="150px">	
+                                <h1 class="" style="font-size: 30px">Rehabilitación oral y estetica :</h1>
+                                <br class="xl-hidde visible">
+        <br class="xl-hidde xs-visible">
+                                </article>
+                                
+                                        <!-- <span>|</span> -->
+                                <article class="line-left-decoration">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore vero temporibus inventore dicta blanditiis laudantium ab! Sit nesciunt dicta maiores veritatis quisquam, nemo quidem, aperiam ab delectus, perspiciatis asperiores!
+                                        Voluptatibus officia provident asperiores nostrum aut ab rerum nemo blanditiis, libero id nesciunt odio veritatis corrupti? Nisi ad vitae quidem nam adipisci earum, consectetur odit non commodi tenetur! Laudantium, consequuntur!</p>
+                                    <br><br>
+                                    <!-- <a href="http://" target="_blank" rel="noopener noreferrer" class="cite"></a>	 -->
+                                    <a href="" class="shop border-d p-1">Agenda tu cita en instantes &nbsp; <i class="fas fa-calendar-day"></i></a>
+                                </article>
+        
+                </div>
+                <!-- #tab4 --> 
+                
+                <h3 class="tab_drawer_heading" rel="tab5">Implantología <span class="float-right"><i class="fas fa-sort-down"></i></span></h3>
+                <div id="tab5" class="tab_content" style="display: none;">
+            
+                        <article class="center">
+                                <img src="img/Inplantologia.svg" class="center" alt="" width="120px">	
+                                <h1 class="" style="font-size: 30px">Implantología :</h1>
+                                <br class="xl-hidde visible">
+        <br class="xl-hidde xs-visible">
+                                </article>
+                                
+                                        <!-- <span>|</span> -->
+                                <article class="line-left-decoration">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore vero temporibus inventore dicta blanditiis laudantium ab! Sit nesciunt dicta maiores veritatis quisquam, nemo quidem, aperiam ab delectus, perspiciatis asperiores!
+                                        Voluptatibus officia provident asperiores nostrum aut ab rerum nemo blanditiis, libero id nesciunt odio veritatis corrupti? Nisi ad vitae quidem nam adipisci earum, consectetur odit non commodi tenetur! Laudantium, consequuntur!</p>
+                                    <br><br>
+                                    <!-- <a href="http://" target="_blank" rel="noopener noreferrer" class="cite"></a>	 -->
+                                    <a href="" class="shop border-d p-1">Agenda tu cita en instantes &nbsp; <i class="fas fa-calendar-day"></i></a>
+                                </article>
+            
+                </div>
+        
+        
+                <h3 class="tab_drawer_heading" rel="tab6">Prevención <span class="float-right"><i class="fas fa-sort-down"></i></span></h3>
+                <div id="tab6" class="tab_content" style="display: none;">
+                
+                        <article class="center">
+                                <img src="img/Prevención.svg" class="center" alt="" width="160px">	
+                                
+                                <h1 class="" style="font-size: 30px">Prevención :</h1>
+                                <br class="xl-hidde visible">
+                                <br class="xl-hidde xs-visible">
+                            </article>
+                            <!-- <hr class="xl-hidde visible"> -->
+                            <!-- <br> -->
+                                        <!-- <span>|</span> -->
+                                <article class="line-left-decoration">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore vero temporibus inventore dicta blanditiis laudantium ab! Sit nesciunt dicta maiores veritatis quisquam, nemo quidem, aperiam ab delectus, perspiciatis asperiores!
+                                        Voluptatibus officia provident asperiores nostrum aut ab rerum nemo blanditiis, libero id nesciunt odio veritatis corrupti? Nisi ad vitae quidem nam adipisci earum, consectetur odit non commodi tenetur! Laudantium, consequuntur!</p>
+                                        <br><br>
+                                    <!-- <a href="http://" target="_blank" rel="noopener noreferrer" class="cite"></a>	 -->
+                                    <a href="" class="shop border-d p-1">Agenda tu cita en instantes &nbsp; <i class="fas fa-calendar-day"></i></a>
+                                </article>
+        
+                </div>
+        
+              <!-- .tab_container -->
+                </div>
+                
+        </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+   <script>
+   // tabbed content
+    // http://www.entheosweb.com/tutorials/css/tabs.asp
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+
+  /* if in tab mode */
+    $("ul.tabs li").click(function() {
+		
+      $(".tab_content").hide();
+      var activeTab = $(this).attr("rel"); 
+      $("#"+activeTab).fadeIn();		
+		
+      $("ul.tabs li").removeClass("active");
+      $(this).addClass("active");
+
+	  $(".tab_drawer_heading").removeClass("d_active");
+	  $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+	  
+    });
+	/* if in drawer mode */
+	$(".tab_drawer_heading").click(function() {
+      
+      $(".tab_content").hide();
+      var d_activeTab = $(this).attr("rel"); 
+      $("#"+d_activeTab).fadeIn();
+	  
+	  $(".tab_drawer_heading").removeClass("d_active");
+      $(this).addClass("d_active");
+	  
+	  $("ul.tabs li").removeClass("active");
+	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+    });
+	
+	
+	/* Extra class "tab_last" 
+	   to add border to right side
+	   of last tab */
+	$('ul.tabs li').last().addClass("tab_last");
+  
+   </script> 
+    
+</body>
+</html>
