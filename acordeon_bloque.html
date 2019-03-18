@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="acordeon.css" type="text/css" media="all" />
+    <title>Tabs</title>
+</head>
+
+<body>
+    <section id="servicios">
+
+        <ul class="tabs">
+            <li rel="tab1" class="active"> Odontología general </li>
+            <li rel="tab2">Periodoncia </li>
+            <li rel="tab3">Endodoncia </li>
+            <li rel="tab4">Rehabilitación oral y estetica </li>
+            <li rel="tab5">Implantología </li>
+            <li rel="tab6" class="tab_last">Prevención</li>
+        </ul>
+        
+        <div class="tab_container"> <!-- start tab container -->
+            <!-- #tab1 -->
+            <div id="tab1" class="tab_content" style="display: grid;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore vero temporibus inventore dicta blanditiis laudantium ab! Sit nesciunt dicta maiores veritatis quisquam, nemo quidem, aperiam ab delectus, perspiciatis asperiores!
+                Voluptatibus officia provident asperiores nostrum aut ab rerum nemo blanditiis, libero id nesciunt odio veritatis corrupti? Nisi ad vitae quidem nam adipisci earum, consectetur odit non commodi tenetur! Laudantium, consequuntur!
+            </div>
+
+            <!-- #tab2 -->
+            <div id="tab2" class="tab_content" style="display: none;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore vero temporibus inventore dicta blanditiis laudantium ab! Sit nesciunt dicta maiores veritatis quisquam, nemo quidem, aperiam ab delectus, perspiciatis asperiores!
+                Voluptatibus officia provident asperiores nostrum aut ab rerum nemo blanditiis, libero id nesciunt odio veritatis corrupti? Nisi ad vitae quidem nam adipisci earum, consectetur odit non commodi tenetur! Laudantium, consequuntur!                                 
+            </div>
+
+            <!-- #tab3 -->
+            <div id="tab3" class="tab_content" style="display: none;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore vero temporibus inventore dicta blanditiis laudantium ab! Sit nesciunt dicta maiores veritatis quisquam, nemo quidem, aperiam ab delectus, perspiciatis asperiores!
+                Voluptatibus officia provident asperiores nostrum aut ab rerum nemo blanditiis, libero id nesciunt odio veritatis corrupti? Nisi ad vitae quidem nam adipisci earum, consectetur odit non commodi tenetur! Laudantium, consequuntur!
+            </div>
+
+            <!-- #tab4 -->
+            <div id="tab4" class="tab_content" style="display: none;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore vero temporibus inventore dicta blanditiis laudantium ab! Sit nesciunt dicta maiores veritatis quisquam, nemo quidem, aperiam ab delectus, perspiciatis asperiores!
+                Voluptatibus officia provident asperiores nostrum aut ab rerum nemo blanditiis, libero id   nesciunt odio veritatis corrupti? Nisi ad vitae quidem nam adipisci earum, consectetur odit non commodi tenetur! Laudantium, consequuntur!
+            </div>
+
+            <!-- #tab5 --> 
+            <div id="tab5" class="tab_content" style="display: none;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore vero temporibus inventore dicta blanditiis laudantium ab! Sit nesciunt dicta maiores veritatis quisquam, nemo quidem, aperiam ab delectus, perspiciatis asperiores!
+                Voluptatibus officia provident asperiores nostrum aut ab rerum nemo blanditiis, libero id nesciunt odio veritatis corrupti? Nisi ad vitae quidem nam adipisci earum, consectetur odit non commodi tenetur! Laudantium, consequuntur!
+            </div>
+            
+            <!-- #tab6 --> 
+            <div id="tab6" class="tab_content" style="display: none;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore vero temporibus inventore dicta blanditiis laudantium ab! Sit nesciunt dicta maiores veritatis quisquam, nemo quidem, aperiam ab delectus, perspiciatis asperiores!
+                Voluptatibus officia provident asperiores nostrum aut ab rerum nemo blanditiis, libero id nesciunt odio veritatis corrupti? Nisi ad vitae quidem nam adipisci earum, consectetur odit non commodi tenetur! Laudantium, consequuntur!
+            </div>        
+        </div>  <!-- end tab_container -->
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        // tabbed content
+        // http://www.entheosweb.com/tutorials/css/tabs.asp
+        $(".tab_content").hide();
+        $(".tab_content:first").show();
+        
+        /* if in tab mode */
+        $("ul.tabs li").click(function() {
+        
+        $(".tab_content").hide();
+        var activeTab = $(this).attr("rel"); 
+        $("#"+activeTab).fadeIn();		
+        
+        $("ul.tabs li").removeClass("active");
+        $(this).addClass("active");
+        
+        $(".tab_drawer_heading").removeClass("d_active");
+        $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+        
+        });
+        /* if in drawer mode */
+        $(".tab_drawer_heading").click(function() {
+        
+        $(".tab_content").hide();
+        var d_activeTab = $(this).attr("rel"); 
+        $("#"+d_activeTab).fadeIn();
+        
+        $(".tab_drawer_heading").removeClass("d_active");
+        $(this).addClass("d_active");
+        
+        $("ul.tabs li").removeClass("active");
+        $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+        });
+        
+        /* Extra class "tab_last" 
+        to add border to right side
+        of last tab */
+        $('ul.tabs li').last().addClass("tab_last");
+    </script> 
+    
+</body>
+</html
