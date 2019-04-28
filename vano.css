@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.Products{
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.containerProduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+.Gridproducts{
+    display: grid;
+    grid-template-columns:  repeat( 4 , minmax( 200px , 1fr ) );
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.Opens{
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.containerOpens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+.GridOpens{
+    display: grid;
+    grid-template-columns:  repeat( 4 , minmax( 200px , 1fr ) );
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.useGridImagen{
+    width: 100%;
+}
+
+.flagfin{
+    height: 150px;
+    background:#1faed8;
+    position: relative;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flagfinApert{
+    height: 100px;
+    background:#1faed8;
+    position: relative;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btnfinContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.btnfin{
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+}
+
+.btnSeparation{
+    margin-bottom: 10px;
+}
+
+.textcenter{
+    text-align: center;
+}
+
+.textcenterTitle{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.textcenterTitle-S{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.textCenterOpen{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.fontTitle{
+    font-family: 'Rubik', sans-serif;
+    font-size:50px;
+}
+
+.fontTitle-S{
+    font-family: 'Rubik', sans-serif;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.fontTitleText{
+    font-family: 'Rubik', sans-serif;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.fontText{
+    font-family: 'Rubik', sans-serif;
+    font-size:16px;
+}
+
+.fontWhite{
+    color:white;
+}
+
+.fontVano{
+    color:#1faed8;
+}
+
+.GridBeneficios{
+    display: grid;
+    grid-template-columns:  repeat( 3 , minmax( 200px , 1fr ) );
+    grid-template-rows:  repeat( 2 , minmax( 200px , 1fr ) );
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.containerBeneficios{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerBeneficiosTitle{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.containerBeneficiosText{
+    padding: 30px;
+}
+
+.leftSeparation{
+    padding-left: 20px;
+}
+
+.footerColor{
+    background-color: #646464;
+    padding-bottom: 50px;
+}
+
+.vanoFooter{
+    display:flex;
+    justify-content: center;
+}
+
+.grapFooter{
+    display:flex;
+    justify-content: space-around;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("imgN/imagen_parallax.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.iconsFollow{
+    font-size: 20px;
+    color:white;
+}
+
+.displayIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.iconspace{
+    padding-right: 10px;
+}
+
+.ourMark{
+    background-color: #595959;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.displayourMarkall{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+}
+
+.displayourMark{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.ourIcon{
+    padding-right: 10px;
+}
+
+@media ( max-width: 768px){
+
+    .Gridproducts{
+        display: grid;
+        grid-template-columns: repeat( 2 , minmax( 10px , 1fr ) );
+    }
+ 
+    .GridOpens{
+        display: grid;
+        grid-template-columns:  repeat( 3 , minmax( 10px , 1fr ) );
+    }
+
+    .GridBeneficios{
+        display: grid;
+        grid-template-columns: repeat( 1 , minmax( 10px , 1fr ) );
+    }
+
+    .fontText{
+        font-family: 'Rubik', sans-serif;
+        font-size:12px;
+    }
+
+    .parallax {
+        /* The image used */
+        background-image:none;
+    }
+
+    .grapFooter{
+        display:flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+}
