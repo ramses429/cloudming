@@ -237,6 +237,22 @@ a{
     padding-right: 10px;
 }
 
+.displayBarFixed{
+    display: flex;
+    justify-content: center;
+}
+
+.barFixed{
+    position:fixed;
+    background-color: #1faed8;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom:20px;
+    z-index: 1;
+    bottom: 100%;
+    bottom: 0;
+}
+
 @media ( max-width: 768px){
 
     .Gridproducts{
@@ -246,7 +262,7 @@ a{
  
     .GridOpens{
         display: grid;
-        grid-template-columns:  repeat( 3 , minmax( 10px , 1fr ) );
+        grid-template-columns:  repeat( 2 , minmax( 10px , 1fr ) );
     }
 
     .GridBeneficios{
