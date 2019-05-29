@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<style>
+.section-header, .steps-header, .steps-name {
+    color: #00d563;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.steps-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.steps-timeline {
+    outline: 1px dashed rgba(255, 0, 0, 0);
+}
+
+@media screen and (max-width: 500px) {
+    .steps-timeline {
+        /* border-left: 2px solid #00d563; */
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .steps-timeline {
+        border-top: 2px solid #00d563;
+        padding-top: 20px;
+        margin-top: 40px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+.steps-timeline:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.steps-one, .steps-two, .steps-three, .steps-four {
+    cursor: pointer;
+    outline: 1px dashed rgba(0, 128, 0, 0);
+}
+
+@media screen and (max-width: 500px) {
+    .steps-one, .steps-two, .steps-three, .steps-four {
+        margin-left: -25px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .steps-one, .steps-two, .steps-three, .steps-four {
+        float: left;
+        width: 25%;
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .steps-one, .steps-two, .steps-three {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .steps-one {
+        /* margin-left: -16.65%; */
+        /* margin-right: 16.65%; */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .steps-three {
+        /* margin-bottom: -100%; */
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .steps-three {
+        /* margin-left: 16.65%; */
+        /* margin-right: -16.65%; */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .steps-four {
+        /* margin-bottom: -100%; */
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .steps-four {
+        /* margin-left: 16.65%; */
+        /* margin-right: -16.65%; */
+    }
+}
+
+.steps-img {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    /* border: 1px solid #ddd;  */
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out
+}
+
+@media screen and (max-width: 500px) {
+    .steps-img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+.steps-name, .steps-description {
+    margin: 0;
+}
+
+@media screen and (min-width: 500px) {
+    .steps-name {
+        text-align: center;
+    }
+}
+
+.steps-description {
+    /* display: none; */
+    overflow: hidden;
+}
+
+@media(max-width:600px) {
+    .unavez {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .steps-description {
+        text-align: center;
+    }
+}
+
+.hidde {
+    visibility: hidden;
+    /* display: none; */
+}
+
+.visible {
+    visibility: visible;
+    /* display: block; */
+}
+
+/* AIMATE NUMBER STEPS _ MINE */
+
+.animate-number {
+    position: absolute;
+    padding: 0 10px;
+    margin: -60px 0px;
+    width: 20%;
+    font-size: 120px;
+    z-index: -1;
+    color: #ebebeb;
+    opacity: .5;
+    transition: 0.3s ease-out;
+}
+
+@media(max-width:900px) {
+    .animate-number {
+        position: relative;
+        margin: 0 0;
+    }
+}
+
+.active-animate-number {
+    margin: -120px 0px;
+    /* top: -5px */
+}
+
+/* .steps-image{
+        padding: 10px;
+        } */
+
+.point-active {
+    /* width: 60px; */
+    /* height: 60px; */
+    background: #ebebeb;
+    color: #fff;
+    padding: 10px
+}
+
+/* .point-active:before{
+        padding: 100px
+        } */
+
+/* AIMATE NUMBER STEPS _ MINE */
+</style>
+
+    <section id="cloud-ming" class="steps-section">
+        <!-- 
+        <h2 class="title-sections">
+            Responsive Semantic Timeline
+        </h2> -->
+        <br><br>
+        <div class="steps-timeline" id="midiv">
+            <div class="steps-one data-animate" rel="#uno" data-number="#data-number-one" data-point="#point1">
+                <!-- <h2>h2</h2> -->
+                <!-- <img class="steps-img" src="http://placehold.it/50/00d664/00d664" alt="" /> -->
+                <div align="middle">
+                    <h2 class="animate-number" id="data-number-one">01</h2>
+                </div>
+                <!-- <br> -->
+                <div class="circle-step-image">
+                    <img class="steps-img" src="http://placehold.it/50/00d664/00d664" alt="" id="point1" />
+                </div>
+                <!-- <div align="middle">2</div> -->
+                <br>
+                <h3 class="steps-name">
+                    Reacj Js
+                </h3>
+                <br>
+                <p class="steps-description unavez" id="uno">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum praesentium blanditiis ducimus
+                    delectus ipsa! At illo sunt porro ipsum labore quibusdam officia. Tempora officiis excepturi quas,
+                    consequuntur quae modi quod?
+                </p>
+            </div>
+
+            <div class="steps-two data-animate" rel="#dos" data-number="#data-number-two" data-point="#point2">
+                <div align="middle">
+                    <h2 class="animate-number" id="data-number-two">02</h2>
+                </div>
+                <div class="circle-step-image">
+                    <img class="steps-img" src="http://placehold.it/50/00d664/00d664" alt="" id="point2" />
+                </div>
+                <br>
+                <h3 class="steps-name">
+                    Vue Js
+                </h3>
+                <p class="steps-description" id="dos">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestiae. Sint, debitis esse?
+                    Veritatis, veniam placeat a molestiae sit error nostrum alias libero tempore earum pariatur
+                    laudantium cum dignissimos minus?
+                </p>
+            </div>
+
+            <div class="steps-three data-animate" rel="#tres" data-number="#data-number-three" data-point="#point3">
+                <div align="middle">
+                    <h2 class="animate-number" id="data-number-three">03</h2>
+                </div>
+                <div class="circle-step-image">
+                    <img class="steps-img" src="http://placehold.it/50/00d664/00d664" alt="" id="point3" />
+                </div>
+                <br>
+                <h3 class="steps-name">
+                    Node Js
+                </h3>
+                <p class="steps-description" id="tres">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et magnam in enim, quo possimus ad tenetur
+                    vero voluptates voluptate impedit suscipit veritatis doloribus libero accusantium quidem ea totam
+                    earum saepe.
+                </p>
+            </div>
+
+            <div class="steps-four data-animate" rel="#cuatro" data-number="#data-number-four" data-point="#point4">
+                <div align="middle">
+                    <h2 class="animate-number" id="data-number-four">04</h2>
+                </div>
+                <div class="circle-step-image">
+                    <img class="steps-img" src="http://placehold.it/50/00d664/00d664" alt="" id="point4" />
+                </div>
+                <br>
+                <h3 class="steps-name">
+                    Java
+                </h3>
+                <p class="steps-description" id="cuatro">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et cupiditate, nam placeat odit doloribus
+                    consequatur dignissimos amet? Rem, itaque! Quam in veniam magni dolores quasi at nobis omnis labore
+                    voluptatum?
+                </p>
+            </div>
+
+        </div><!-- /.steps-timeline -->
+
+    </section>
+    
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+
+            // ANIMATION FUNCTION
+
+            function animation() {
+                // ALL SHEETS DISPLAY NONE
+                $('.steps-description').addClass('hidde');
+                // ALL SHEETS DISPLAY NONE
+
+                // DEAFULT TEXT VISIBLE
+                $('.unavez').addClass('visible');
+                // DEAFULT TEXT VISIBLE
+
+                // DEAFULT NUMBER VISIBLE
+                $('#data-number-one').addClass('active-animate-number')
+                // DEAFULT NUMBER VISIBLE
+
+                // DEAFULT POINT
+                $('#point1').addClass('point-active')
+
+                $('.data-animate').click(function () {
+                    // ALL SHEETS DISPLAY NONE
+                    $('.steps-description').addClass('hidde')
+
+                    // ONLY VISIBLE CLICK EVENT REMOVE CLASS
+                    // $() ECAPSULATE CLASS DISPLAY
+                    $($(this).attr('rel')).removeClass('hidde')
+
+                    $('.steps-img').removeClass('point-active')
+                    $($(this).attr('data-point')).addClass('point-active')
+
+
+                    // INITIAL STATUS DISPLAY NONE
+
+                    $('.animate-number').removeClass('active-animate-number')
+
+                    // ANIMATE NUMBER
+                    $($(this).attr('data-number')).addClass('active-animate-number')
+
+                    // DEAFULT TEXT VISIBLE NO VISIBLE
+                    $('.unavez').removeClass('visible')
+                });
+
+            }
+
+            // ANIMATION FUNCTION
+
+            function myFunction(x) {
+                if (x.matches) { // If media query matches
+                    // document.body.style.backgroundColor = "pink";
+                    // data-aos="fade-right"
+                    $('.data-animate').attr('data-aos', 'fade-right')
+                    AOS.init()
+                } else {
+                    animation()
+                }
+            }
+
+            var x = window.matchMedia("(max-width: 700px)")
+            myFunction(x) // Call listener function at run time
+            x.addListener(myFunction) // Attach listener function on state changes
+
+
+        </script>
+
+</body>
+</html>
