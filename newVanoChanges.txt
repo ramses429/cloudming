@@ -1,0 +1,225 @@
+.CTA1-ButtomI {
+      margin: 6px 3px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+    
+     .CTA1-ButtomE__Two{
+      margin-top: -10px;
+    }
+    
+    
+     .marginsClasicalTwo {
+      padding:6vw 6vw;
+    }
+    
+    .containerLogos {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .footerColor {
+      background-color: #646464;
+      padding-bottom: 50px;
+    }
+
+    .vanoFooter {
+      display: flex;
+      justify-content: center;
+    }
+
+    .grapFooter {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .iconsFollow {
+      font-size: 20px;
+      color: white;
+    }
+
+    .displayIcons {
+      display: flex;
+      justify-content: center;
+    }
+
+    .iconspace {
+      padding-right: 10px;
+    }
+
+    .ourMark {
+      background-color: #595959;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .displayourMarkall {
+      display: flex;
+      justify-content: space-evenly;
+      height: 100%;
+      align-items: center;
+    }
+
+    .displayourMark {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      align-items: center;
+    }
+
+    .ourIcon {
+      padding-right: 10px;
+    }
+
+
+    .textcenter {
+  text-align: center;
+}
+
+.textcenterTitle {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.textcenterTitle-S {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.textCenterOpen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.fontTitle {
+  font-family: "Rubik", sans-serif;
+  font-size: 33px;
+}
+
+.fontTitle-S {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+
+.fontTitleText {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fontText {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+.fontText2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.fontWhite {
+  color: white;
+}
+
+.fontVano {
+  color: #1faed8;
+}
+
+.colorBlack{
+  color:black;
+}
+
+.containercallToActionTwoText{
+  display: flex;
+  align-items: center;
+  justify-content:space-around; 
+  
+}
+
+.containercallToActionTwo{
+  display: flex;
+  flex-direction:column;
+  background-image: url('img/travel/windowCTA.jpg');
+  background-size:cover;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.containercallToActionTwoButton{
+  text-align: center;
+}
+
+ <section id="callToActionTwo">
+    <div class="containercallToActionTwo marginsClasical marginsClasicalTwo">
+      <div class="containercallToActionTwoText">
+        <div class="textcenter">
+          <h1 class="colorBlack">Gracias al PVC puedes tener cualquier tipo de ventana con cualquier rango de apertura con una gama de colores muy variada </h1>
+        </div>
+      </div>
+      <div class="containercallToActionTwoButton">
+        <button class="CTA1-ButtomE CTA1-ButtomE__Two rippleButton" on="tap:my-lightbox">
+          <h4 class="CTA1-ButtomI "> Recibir accesoria </h4>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="footerColor" id="contacto">
+    <div>
+      <div class="vanoFooter">
+        <amp-img src="img/travel/logoVanoWhite.svg" alt="Ventanas antiruido alemanas construidas en pvc" height="200px"
+          width="200px">
+      </div>
+      <hr>
+      <div class="grapFooter">
+        <div>
+          <div class="fontTitle-S fontWhite textcenter textcenterTitle-S">Contactanos</div>
+          <div class="fontText fontWhite textcenter">Correo <i class="far fa-envelope"></i> :
+            <a class="fontWhite" href="mailto:miguelvelez@vanoarquitectonico.com">miguelvelez@vanorquitectonico.com</a>
+          </div>
+          <div class="fontText fontWhite textcenter">Telefono Fijo<i class="fas fa-phone"></i> :
+            <a class="fontWhite" href="tel:"></a>
+          </div>
+          <div class="fontText fontWhite textcenter">Celular <i class="fas fa-phone"></i> :
+            <a class="fontWhite" href="tel:3007783547">3007783547</a>
+          </div>
+        </div>
+        <div>
+          <div class="fontTitle-S fontWhite textcenter textcenterTitle-S"> Documentos adicionales</div>
+          <div class="fontText fontWhite textcenter">
+            <a class="fontWhite" href="pdf/Rehau - Brochure WS Colombia.pdf"> Resumen técnico </a>
+          </div>
+        </div>
+        <div>
+          <div class="fontTitle-S fontWhite textcenter textcenterTitle-S">Síguenos </div>
+          <div class="displayIcons">
+            <a href="https://www.facebook.com/VANO-Arquitectonico-318260118595005/">
+              <amp-img src="img/travel/faceboock.svg" alt="Ventanas antiruido alemanas construidas en pvc" width="20px"
+                height="20px"></amp-img>
+            </a>
+            &nbsp;&nbsp;
+            <a href="https://www.instagram.com/vano_arquitectonico/">
+              <amp-img src="img/travel/instagram.svg" alt="Ventanas antiruido alemanas construidas en pvc" width="20px"
+                height="20px"></amp-img>
+            </a>
+            &nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ourMark">
+    <div class="displayourMarkall">
+      <div class="displayourMark">
+        <amp-img src="img/travel/logo_blanco_cloudming.svg" class="ourIcon" height="30px" width="30px"
+          alt="Ventanas antiruido alemanas construidas en pvc"></amp-img>
+        <div class="fontText fontWhite">CLOUD MING.SAS</div>
+      </div>
+      <div class="fontText fontWhite">Todos los derechos reservados</div>
+    </div>
+  </section>
+
