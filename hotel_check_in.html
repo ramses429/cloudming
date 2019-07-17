@@ -100,3 +100,389 @@
         <!-- PRINCIPAL GRID CHECK_IN -->
     </div>
     <!-- PRINCIPAL GRID CHECK_IN -->
+
+:focus {
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: scroll; */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.block_check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 220px;
+  background: #fff;
+  border: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 6px rgba(124, 124, 124, 0.171),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 3px 6px rgba(124, 124, 124, 0.171),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 3px 6px rgba(124, 124, 124, 0.171),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 3px 6px rgba(124, 124, 124, 0.171),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(124, 124, 124, 0.171),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media (max-width: 900px) {
+  .block_check {
+    height: 140px;
+  }
+}
+.month {
+  font-size: 20px;
+}
+
+.peoples {
+  text-align: center;
+}
+
+.title_check_in,
+.title_check_out,
+.title_check_people {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.line_width_max_black {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 900px) {
+  .line_width_max_black {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+}
+#day_check_in,
+#day_check_out {
+  height: 80px;
+  font-size: 4.5rem;
+}
+
+@media (max-width: 900px) {
+  #day_check_in,
+  #day_check_out {
+    /* ... */
+    height: 15px;
+    font-size: 2.9rem;
+  }
+}
+#number {
+  width: 45px;
+  height: 140px;
+  border: 0;
+  font-size: 5rem;
+}
+@media (max-width: 900px) {
+  #number {
+    /* ... */
+    /* width: 45px; */
+    height: 70px;
+    /* border: 0; */
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+.item_left_flower {
+  grid-area: left_flower;
+  width: 19.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .item_left_flower {
+    width: 14vw;
+  }
+  .item_left_flower img {
+    width: 60px;
+    height: 160px;
+  }
+}
+
+.item_decoration_left {
+  grid-area: decoration_left;
+  width: 11vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .item_decoration_left {
+    width: 5vw;
+  }
+}
+
+.item_day_check_in {
+  grid-area: day_check_in;
+  width: 13vw;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .item_day_check_in {
+    width: 21vw;
+  }
+}
+
+.item_day_check_out {
+  grid-area: day_check_out;
+  width: 13vw;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .item_day_check_out {
+    width: 21vw;
+  }
+}
+
+.item_peoples_number {
+  grid-area: peoples_number;
+  width: 13vw;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .item_peoples_number {
+    width: 21vw;
+  }
+}
+
+.item_decoration_right {
+  grid-area: decoration_right;
+  width: 11vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .item_decoration_right {
+    width: 5vw;
+  }
+}
+
+.item_right_flower {
+  grid-area: right_flower;
+  width: 19.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.item_right_flower img.img_flower_1 {
+  width: 50px;
+  height: 190px;
+}
+
+.item_right_flower img.img_flower_2 {
+  width: 60px;
+  height: 100px;
+}
+@media (max-width: 900px) {
+  .item_right_flower {
+    width: 14vw;
+  }
+}
+
+.grid_check_in {
+  display: grid;
+  /* grid-template-columns: auto auto auto auto auto auto auto 10px; */
+  grid-template-areas:
+    "left_flower decoration_left day_check_in day_check_out peoples_number decoration_right right_flower"
+    "submit_block submit_block submit_block submit_block submit_block submit_block submit_block";
+  grid-gap: 0;
+  /* height: 360px; */
+  /* align-content: center; */
+  background-color: #eeececc9;
+  /* background-image: url(../img/patron.jpg); */
+}
+
+.submit_block {
+  grid-area: submit_block;
+  text-align: center;
+}
+
+.submit_block button {
+  grid-area: submit_block;
+  /* text-align: center; */
+  position: relative;
+  top: -10px;
+}
+
+/* BG----------------- */
+.card {
+  border: 0;
+  background: rgba(255, 255, 255, 0.596);
+}
+
+.card:before,
+.card:after {
+  --p: 0;
+  --s: calc(1 - 2 * var(--p));
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-mask: var(--m);
+  mask: var(--m);
+  content: "";
+  z-index: -1;
+}
+
+.card:after {
+  --p: 1;
+}
+
+.card::before,
+.card::after {
+  background: linear-gradient(
+      calc(var(--s) * 45deg),
+      transparent calc(50% - 1px),
+      #dddddd 0,
+      #000000 calc(50% + 1px),
+      transparent 0
+    )
+    0 0/ 0.5em 0.5em;
+  --m: linear-gradient(red 50%, transparent 0) 0 0/ 4em 4em,
+    linear-gradient(90deg, red 50%, transparent 0) calc(var(--p) * 2em) 0/ 4em 4em;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+
+
+
+
+  // function calendar(){
+        // var day = 1;
+
+        function detectMonth(params) {
+            var day;
+            switch (params) {
+                case 1:
+                    day = "Enero";
+                    break;
+                case 2:
+                    day = "Febrero";
+                    break;
+                case 3:
+                    day = "Marzo";
+                    break;
+                case 4:
+                    day = "Abril";
+                    break;
+                case 5:
+                    day = "Mayo";
+                    break;
+                case 6:
+                    day = "Junio";
+                    break;
+                case 7:
+                    day = "Julio";
+                    break;
+                case 8:
+                    day = "Agosto"
+                    break;
+                case 9:
+                    day = "Septiembre"
+                    break;
+                case 10:
+                    day = "Octubre"
+                    break;
+                case 11:
+                    day = "Noviembre"
+                    break;
+                case 12:
+                    day = "Diciembre"
+            }
+            return day;
+            // alert(day)
+        }
+
+        const datePattern = /(\d{4})-(\d{1,2})-(\d{1,2})/;
+
+        document.getElementById("check_in").onchange = async function () {
+            var str = document.getElementById("check_in").value;
+
+            // console.log(document.getElementById("check_in").value);
+
+
+            const date = datePattern.exec(str); // ["11/12/2014", "11", "12", "2014"]
+
+            if (date === null) {
+                alert("err")
+            }
+            document.getElementById("day_check_in").innerHTML = parseInt(date[3]);
+
+            document.getElementById("month_check_in").innerHTML = detectMonth(parseInt(date[2]));
+            // var prew = date[2];
+            // console.log(parseInt(prew));
+            // console.log(detectMonth(parseInt(date[2])));
+            // console.log("Check-in : " + date[3] + " Mes :" + date[2])
+
+        }
+
+        document.getElementById("check_out").onchange = async function () {
+            // document.getElementById("err_2").innerHTML = 12;
+            var check_out_value = document.getElementById("check_out").value;
+
+            const check_out_out = datePattern.exec(check_out_value); // ["11/12/2014", "11", "12", "2014"]
+
+            // console.log('listo' + check_out_out[1]);
+            document.getElementById("day_check_out").innerHTML = parseInt(check_out_out[3]);
+            document.getElementById("month_check_out").innerHTML = detectMonth(parseInt(check_out_out[2]));
+        }
+
+
+
+        // INCREMENTAR PERSONAS
+        function increment() {
+            document.getElementById("number").stepUp(1);
+        }
+
+        function decrement() {
+            document.getElementById("number").stepDown(1);
+        }
+
